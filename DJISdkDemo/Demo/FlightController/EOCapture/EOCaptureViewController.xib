@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EOCaptureViewController">
+            <connections>
+                <outlet property="recordingTimeLabel" destination="Myn-n0-WSI" id="6TW-Jq-8a3"/>
+                <outlet property="startRecordButton" destination="BSU-1Z-G6v" id="WuK-0l-vtu"/>
+                <outlet property="videoFeedView" destination="W7M-T3-MP0" id="sTY-XH-ctx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSU-1Z-G6v">
+                    <rect key="frame" x="58" y="229" width="113" height="78"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="113" id="2LV-eo-TGg"/>
+                        <constraint firstAttribute="height" constant="78" id="yE9-3V-YdG"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="0.049691020333036517" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Start Record" backgroundImage="btn">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onStartRecordButtonClicked:" destination="-1" eventType="touchUpInside" id="Ibs-ui-piz"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Myn-n0-WSI">
+                    <rect key="frame" x="122.66666666666669" y="187" width="130" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="130" id="L2V-YD-ot7"/>
+                        <constraint firstAttribute="height" constant="21" id="k59-up-bxq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W7M-T3-MP0">
+                    <rect key="frame" x="-4.6666666666666572" y="400" width="384.33333333333326" height="175"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="269" id="Jp0-Sq-rz4">
+                            <variation key="heightClass=compact" constant="196"/>
+                            <variation key="widthClass=compact" constant="175"/>
+                        </constraint>
+                        <constraint firstAttribute="width" constant="584" id="upc-UZ-yY6">
+                            <variation key="heightClass=compact" constant="518"/>
+                            <variation key="widthClass=compact" constant="384"/>
+                        </constraint>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7HN-Kr-bqn">
+                    <rect key="frame" x="215" y="229" width="113" height="78"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="113" id="Ckf-tV-rhz"/>
+                        <constraint firstAttribute="height" constant="78" id="mBO-bI-ubL"/>
+                    </constraints>
+                    <state key="normal" title="Land" backgroundImage="btn">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="landBtn:" destination="-1" eventType="touchUpInside" id="w84-Wa-3kN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="W7M-T3-MP0" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="100.5" id="3Zw-jP-Cg3">
+                    <variation key="heightClass=compact" constant="67"/>
+                    <variation key="widthClass=compact" constant="81.5"/>
+                </constraint>
+                <constraint firstItem="W7M-T3-MP0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4Bk-3u-XF1"/>
+                <constraint firstItem="Myn-n0-WSI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7dg-Gi-fc2"/>
+                <constraint firstItem="BSU-1Z-G6v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="58" id="CAS-Yo-KgT"/>
+                <constraint firstAttribute="trailing" secondItem="7HN-Kr-bqn" secondAttribute="trailing" constant="47" id="E1x-iK-VZe"/>
+                <constraint firstItem="7HN-Kr-bqn" firstAttribute="leading" secondItem="BSU-1Z-G6v" secondAttribute="trailing" constant="44" id="JdC-G3-eou"/>
+                <constraint firstItem="7HN-Kr-bqn" firstAttribute="top" secondItem="BSU-1Z-G6v" secondAttribute="top" id="PTN-Lj-Y7e"/>
+                <constraint firstItem="Myn-n0-WSI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-208.5" id="UAX-To-zgv">
+                    <variation key="heightClass=compact" constant="-158.5"/>
+                </constraint>
+                <constraint firstItem="BSU-1Z-G6v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="229" id="mCG-mY-hX0"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn" width="16" height="34"/>
+    </resources>
+</document>

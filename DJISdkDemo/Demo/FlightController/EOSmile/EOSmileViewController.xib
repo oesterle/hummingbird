@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EOSmileViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnm-ld-1G4">
+                    <rect key="frame" x="116" y="476" width="142" height="111"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="111" id="7VD-Eb-cRF"/>
+                        <constraint firstAttribute="width" constant="142" id="Zsh-ET-fbD"/>
+                    </constraints>
+                    <state key="normal" title="Capture" backgroundImage="btn">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onSmileButtonClicked:" destination="-1" eventType="touchUpInside" id="C9S-JT-j1F"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smile!" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CC-3n-ZpD">
+                    <rect key="frame" x="54" y="155" width="268" height="81.666666666666686"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="268" id="GoY-0S-5fB"/>
+                        <constraint firstAttribute="height" constant="81.333333333333314" id="fVh-6G-xPn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6CC-3n-ZpD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="155" id="4Id-CS-ECo"/>
+                <constraint firstItem="6CC-3n-ZpD" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="TGx-FN-r0n"/>
+                <constraint firstItem="6CC-3n-ZpD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="54" id="Uqn-fA-Bab"/>
+                <constraint firstItem="bnm-ld-1G4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pTG-mL-wak"/>
+                <constraint firstAttribute="bottom" secondItem="bnm-ld-1G4" secondAttribute="bottom" constant="225" id="vvn-L8-YfF"/>
+            </constraints>
+            <point key="canvasLocation" x="396.5" y="647"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn" width="16" height="34"/>
+    </resources>
+</document>

@@ -8,6 +8,8 @@
 
 Shamelessly built on top of DJI SDK sample code.
 
+![hummingbird demo](Cloudinary_hummingbird_demo_GIF.gif "hummingbird demo")
+
 
 
 ![iOSDevCamp](iDC-logo.png "iOSDevCamp")
